@@ -133,6 +133,17 @@ int main()
             <<"-------------------------------------------------------------------------------------------\n"
             <<endl;
         n++;
+    } while (n <= 4);
+    do{
+        int maxSum1 = 0; int maxSum2 = 0; int maxSum3 = 0; int maxSum4 = 0;
+        cout<<"Truong hop n = "<<testcase[n]<<endl;
+        //cout<<"\nThoi gian chay thuat toan 1: "<<setprecision(10)<<ThuatToan1(A,testcase[n],maxSum1)<<"\n    Ket qua = "<<maxSum1<<"\n";
+        cout<<"\nThoi gian chay thuat toan 2: "<<setprecision(10)<<ThuatToan2(A,testcase[n],maxSum2)<<"\n    Ket qua = "<<maxSum2<<"\n";
+        cout<<"\nThoi gian chay thuat toan 3: "<<setprecision(10)<<ThuatToan3(A,testcase[n],maxSum3)<<"\n    Ket qua = "<<maxSum3<<"\n";
+        cout<<"\nThoi gian chay thuat toan 4: "<<setprecision(10)<<ThuatToan4(A,testcase[n],maxSum4)<<"\n    Ket qua = "<<maxSum4<<"\n"
+            <<"-------------------------------------------------------------------------------------------\n"
+            <<endl;
+        n++;
     } while (n <= 9);
     return 0;
 }
