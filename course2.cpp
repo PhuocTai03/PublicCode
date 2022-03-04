@@ -120,30 +120,41 @@ float ThuatToan4(int A[], int n, int &maxSum){
 int main()
 {
     int A[MAXN];
-    int testcase[] = {10, 100, 1000, 5000, 10000, 100000, 200000, 300000, 400000, 500000};
+    int testcase[] = {10, 100, 1000, 5000, 10000, 20000, 50000, 100000, 200000, 300000, 400000, 500000};
 	int n = 0;
     do{
         int maxSum1 = 0; int maxSum2 = 0; int maxSum3 = 0; int maxSum4 = 0;
         RandomArray(A,testcase[n]);
-        cout<<"Truong hop n = "<<testcase[n]<<endl;
-        cout<<"\nThoi gian chay thuat toan 1: "<<setprecision(10)<<ThuatToan1(A,testcase[n],maxSum1)<<"\n    Ket qua = "<<maxSum1<<"\n";
-        cout<<"\nThoi gian chay thuat toan 2: "<<setprecision(10)<<ThuatToan2(A,testcase[n],maxSum2)<<"\n    Ket qua = "<<maxSum2<<"\n";
-        cout<<"\nThoi gian chay thuat toan 3: "<<setprecision(10)<<ThuatToan3(A,testcase[n],maxSum3)<<"\n    Ket qua = "<<maxSum3<<"\n";
-        cout<<"\nThoi gian chay thuat toan 4: "<<setprecision(10)<<ThuatToan4(A,testcase[n],maxSum4)<<"\n    Ket qua = "<<maxSum4<<"\n"
-            <<"-------------------------------------------------------------------------------------------\n"
-            <<endl;
+        cout<<"\nTruong hop n = "<<testcase[n];
+        cout<<"\nThoi gian chay thuat toan 1: "<<setprecision(10)<<ThuatToan1(A,testcase[n],maxSum1)<<"\n"<<"Ket qua = "<<maxSum1<<"\n";
+        cout<<"\nThoi gian chay thuat toan 2: "<<setprecision(10)<<ThuatToan2(A,testcase[n],maxSum2)<<"\n"<<"Ket qua = "<<maxSum2<<"\n";
+        cout<<"\nThoi gian chay thuat toan 3: "<<setprecision(10)<<ThuatToan3(A,testcase[n],maxSum3)<<"\n"<<"Ket qua = "<<maxSum3<<"\n";
+        cout<<"\nThoi gian chay thuat toan 4: "<<setprecision(10)<<ThuatToan4(A,testcase[n],maxSum4)<<"\n"<<"Ket qua = "<<maxSum4<<"\n"
+             <<"-------------------------------------------------------------------------------------------\n"
+             <<endl; 
         n++;
     } while (n <= 4);
     do{
         int maxSum1 = 0; int maxSum2 = 0; int maxSum3 = 0; int maxSum4 = 0;
-        cout<<"Truong hop n = "<<testcase[n]<<endl;
-        //cout<<"\nThoi gian chay thuat toan 1: "<<setprecision(10)<<ThuatToan1(A,testcase[n],maxSum1)<<"\n    Ket qua = "<<maxSum1<<"\n";
-        cout<<"\nThoi gian chay thuat toan 2: "<<setprecision(10)<<ThuatToan2(A,testcase[n],maxSum2)<<"\n    Ket qua = "<<maxSum2<<"\n";
-        cout<<"\nThoi gian chay thuat toan 3: "<<setprecision(10)<<ThuatToan3(A,testcase[n],maxSum3)<<"\n    Ket qua = "<<maxSum3<<"\n";
-        cout<<"\nThoi gian chay thuat toan 4: "<<setprecision(10)<<ThuatToan4(A,testcase[n],maxSum4)<<"\n    Ket qua = "<<maxSum4<<"\n"
-            <<"-------------------------------------------------------------------------------------------\n"
-            <<endl;
+        cout<<"\nTruong hop n = "<<testcase[n]; //Thuattoan1 > 5 phut
+        //cout<<"\nThoi gian chay thuat toan 1: "<<setprecision(10)<<ThuatToan1(A,testcase[n],maxSum1)<<"\n"<<"Ket qua = <<maxSum1<<"\n";
+        cout<<"\nThoi gian chay thuat toan 2: "<<setprecision(10)<<ThuatToan2(A,testcase[n],maxSum2)<<"\n"<<"Ket qua = "<<maxSum2<<"\n";
+        cout<<"\nThoi gian chay thuat toan 3: "<<setprecision(10)<<ThuatToan3(A,testcase[n],maxSum3)<<"\n"<<"Ket qua = "<<maxSum3<<"\n";
+        cout<<"\nThoi gian chay thuat toan 4: "<<setprecision(10)<<ThuatToan4(A,testcase[n],maxSum4)<<"\n"<<"Ket qua = "<<maxSum4<<"\n"
+             <<"-------------------------------------------------------------------------------------------\n"
+             <<endl; 
         n++;
-    } while (n <= 9);
+    } while (n <= 10);
+    do{
+        int maxSum1 = 0; int maxSum2 = 0; int maxSum3 = 0; int maxSum4 = 0;
+        cout<<"\nTruong hop n = "<<testcase[n]; //Thuattoan1 > 5 phut
+        //cout<<"\nThoi gian chay thuat toan 1: "<<setprecision(10)<<ThuatToan1(A,testcase[n],maxSum1)<<"\n"<<"Ket qua = "<<maxSum1<<"\n";
+        //cout<<"\nThoi gian chay thuat toan 2: "<<setprecision(10)<<ThuatToan2(A,testcase[n],maxSum2)<<"\n"<<"Ket qua = "<<maxSum2<<"\n";
+        cout<<"\nThoi gian chay thuat toan 3: "<<setprecision(10)<<ThuatToan3(A,testcase[n],maxSum3)<<"\n"<<"Ket qua = "<<maxSum3<<"\n";
+        cout<<"\nThoi gian chay thuat toan 4: "<<setprecision(10)<<ThuatToan4(A,testcase[n],maxSum4)<<"\n"<<"Ket qua = "<<maxSum4<<"\n"
+             <<"-------------------------------------------------------------------------------------------\n"
+             <<endl; 
+        n++;
+    } while (n <= 11);
     return 0;
 }
