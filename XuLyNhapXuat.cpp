@@ -95,19 +95,22 @@ int main(){
         case 7:{
             cout<<"\nCase 7: \n";
             int i = 0;
-            FILE *file = fopen("DuLieuDauVao.txt","r"); //r=read : doc
+            FILE *file = fopen("Nhap.txt","r"); //r=read : doc
+            FILE *fileX = fopen("Xuat.txt", "w");
             char *s = new char; // gan dai
             do
             {
                 char line[150];
-                s=fgets(line,150,file);
+                s = fgets(line,150,file);
                 if(s==NULL) break;
                 else {
                     cout<<"Phan tu "<<i<<" = "<<s;
                     i++;
+                    fputs(s, fileX);
                 }
             } while (true);
             fclose(file);
+            fclose(fileX);
             break;
         }
         default:
