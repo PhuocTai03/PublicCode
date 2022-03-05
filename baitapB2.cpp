@@ -12,7 +12,7 @@ void Xuat(int arr[], int n){
         cout<<"Phan tu "<<i<<" = "<<arr[i]<<endl;
 }
 int main(){
-    int n = 7;
+    int n = 1;
     do{
         switch (n)
         {
